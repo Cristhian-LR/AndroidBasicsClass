@@ -1,5 +1,6 @@
 package com.example.androidbasicsclass.ui.login.view
 
+import android.util.Log
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.androidbasicsclass.ui.login.viewmodel.LoginViewModel
 import androidx.compose.foundation.Image
@@ -85,7 +86,7 @@ fun LoginView(
 
         // Botón de inicio de sesión
         Button(
-            onClick = { onLoginSuccess() },  // ← único cambio aquí
+            onClick = {Log.d("Cristhian","Hola")},  // ← único cambio aquí
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(stringResource(R.string.login_button))
